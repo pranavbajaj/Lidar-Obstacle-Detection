@@ -1,5 +1,5 @@
 # Sensor Fusion Nanodegree (Udacity)
-##Lidar Obstacle Detection
+## Lidar Obstacle Detection
 
 This project contains code that demonstrates techniques of working with the real point cloud data collected with the Lidar sensor. 
 
