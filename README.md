@@ -42,12 +42,15 @@ NOTE: very old version
 #### By default, the project is running on custom implemented code for segmenting and clustering. To run the project on built-in functions, change the following parameter from the cityBlock function in environment.cpp (~/Lidar-Obstacle-Detection/src/environment.cpp).
 
 ***bool clustering_builting_function***: If "false", the project runs on custom code for clustering and if "true", the project runs on builtin function. 
+
 ***bool segmentation_builtin_function***: If "false", the project runs on custom code for segmenting plan and if "true", the project runs on builtin function. 
 
 **Other Parameters**
 
 ***bool render_cluster***: if "true", the object clusters will be displayed. 
+
 ***bool render_box***: if "true", regular bounding box will appear around the objects. 
+
 ***bool BOXQ***: if "true", BoxQ box will appear around the objects.
 
 
