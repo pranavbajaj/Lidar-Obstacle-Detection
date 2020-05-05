@@ -41,20 +41,22 @@ NOTE: very old version
 
 #### By default, the project is running on custom implemented code for segmenting and clustering. To run the project on built-in functions, change the following parameter from the cityBlock function in environment.cpp (~/Lidar-Obstacle-Detection/src/environment.cpp).
 
-bool clustering_builting_function : If "false", the project runs on custom code for clustering and if "true", the project runs on builtin function. 
-bool segmentation_builtin_function: If "false", the project runs on custom code for segmenting plan and if "true", the project runs on builtin function. 
+***bool clustering_builting_function***: If "false", the project runs on custom code for clustering and if "true", the project runs on builtin function. 
+***bool segmentation_builtin_function***: If "false", the project runs on custom code for segmenting plan and if "true", the project runs on builtin function. 
 
-**Other Parameters **
-bool render_cluster: if "true", the object clusters will be displayed. 
-bool render_box: if "true", regular bounding box will appear around the objects. 
-bool BOXQ: if "true", BoxQ box will appear around the objects.
+**Other Parameters**
+
+***bool render_cluster***: if "true", the object clusters will be displayed. 
+***bool render_box***: if "true", regular bounding box will appear around the objects. 
+***bool BOXQ***: if "true", BoxQ box will appear around the objects.
 
 
-#### Point Cloud Data processing
+### Point Cloud Data processing
 
 **1.Filtering**: Data is filtered so that it can be processed in realtime. Voxel Grid and Region of Interest filtering. 
 Voxel Grid: Voxel grid filtering will create a cubic grid and will filter the cloud by only leaving a single point per voxel cube, so the larger the cube length the lower the resolution of the point cloud.
 Region of Interest: A boxed region is defined and any points outside that box are removed.
+
 **2. Segmentation**: If the road is flat it’s fairly straightforward to pick out road points from non-road points. To do a method called Planar Segmentation which uses the RANSAC (random sample consensus) algorithm. Road and Obstacle data are seperated into two different point clouds.
 RANSAC: RANSAC stands for Random Sample Consensus, and is a method for detecting outliers in data. RANSAC runs for a max number of iterations, and returns the model with the best fit. Each iteration randomly picks a subsample of the data and fits a model through it, such as a line or a plane. Then the iteration with the highest number of inliers or the lowest noise is used as the best model.
 
