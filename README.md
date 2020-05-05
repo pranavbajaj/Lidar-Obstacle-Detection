@@ -38,8 +38,10 @@ NOTE: very old version
 
 [PCL Mac Compilation Docs](http://www.pointclouds.org/documentation/tutorials/compiling_pcl_macosx.php)
 
-~~~
-#### By default, the project is running on custom implemented code for segmenting and clustering. To run the project on built-in functions, change the following parameter from the cityBlock function in environment.cpp (~/Lidar-Obstacle-Detection/src/environment.cpp).
+
+### By default, the project is running on custom implemented code for segmenting and clustering. 
+
+**To run the project on built-in functions, change the following parameter from the cityBlock function in environment.cpp (~/Lidar-Obstacle-Detection/src/environment.cpp).**
 
 ***bool clustering_builting_function***: If "false", the project runs on custom code for clustering and if "true", the project runs on builtin function. 
 
