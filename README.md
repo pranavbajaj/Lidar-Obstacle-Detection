@@ -1,4 +1,5 @@
-# Sensor Fusion Self-Driving Car Course
+# Sensor Fusion Nanodegree (Udacity)
+
 
 <img src="media/ObstacleDetectionFPS.gif" width="700" height="400" />
 
