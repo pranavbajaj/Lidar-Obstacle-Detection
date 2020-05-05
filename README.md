@@ -14,14 +14,10 @@ This project contains code that demonstrates techniques of working with the real
 
 ```bash
 $> sudo apt install libpcl-dev
-```
-Create a project folder (ex. project1)
-```bash
+#Create a project folder (ex. project1)
 $> cd project1
 $> git clone https://github.com/pranavbajaj/Lidar-Obstacle-Detection.git
-```
-Delete the build folder
-```bash
+#Delete the build folder
 $> mkdir build && cd build
 $> cmake ..
 $> make
